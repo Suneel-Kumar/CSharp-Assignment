@@ -1,0 +1,9 @@
+c:\users\suneel kumar\documents\visual studio 2015\Projects\Q2 ChaseUpStore\Q2 ChaseUpStore\bin\Debug\Q2 ChaseUpStore.exe.config
+c:\users\suneel kumar\documents\visual studio 2015\Projects\Q2 ChaseUpStore\Q2 ChaseUpStore\bin\Debug\Q2 ChaseUpStore.exe
+c:\users\suneel kumar\documents\visual studio 2015\Projects\Q2 ChaseUpStore\Q2 ChaseUpStore\bin\Debug\Q2 ChaseUpStore.pdb
+c:\users\suneel kumar\documents\visual studio 2015\Projects\Q2 ChaseUpStore\Q2 ChaseUpStore\obj\Debug\Q2 ChaseUpStore.csprojResolveAssemblyReference.cache
+c:\users\suneel kumar\documents\visual studio 2015\Projects\Q2 ChaseUpStore\Q2 ChaseUpStore\obj\Debug\Q2_ChaseUpStore.Form1.resources
+c:\users\suneel kumar\documents\visual studio 2015\Projects\Q2 ChaseUpStore\Q2 ChaseUpStore\obj\Debug\Q2_ChaseUpStore.Properties.Resources.resources
+c:\users\suneel kumar\documents\visual studio 2015\Projects\Q2 ChaseUpStore\Q2 ChaseUpStore\obj\Debug\Q2 ChaseUpStore.csproj.GenerateResource.Cache
+c:\users\suneel kumar\documents\visual studio 2015\Projects\Q2 ChaseUpStore\Q2 ChaseUpStore\obj\Debug\Q2 ChaseUpStore.exe
+c:\users\suneel kumar\documents\visual studio 2015\Projects\Q2 ChaseUpStore\Q2 ChaseUpStore\obj\Debug\Q2 ChaseUpStore.pdb

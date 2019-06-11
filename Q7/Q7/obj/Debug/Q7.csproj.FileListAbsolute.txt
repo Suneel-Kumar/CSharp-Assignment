@@ -1,0 +1,6 @@
+c:\users\suneel kumar\documents\visual studio 2015\Projects\Q7\Q7\bin\Debug\Q7.exe.config
+c:\users\suneel kumar\documents\visual studio 2015\Projects\Q7\Q7\obj\Debug\Q7.csprojResolveAssemblyReference.cache
+c:\users\suneel kumar\documents\visual studio 2015\Projects\Q7\Q7\bin\Debug\Q7.exe
+c:\users\suneel kumar\documents\visual studio 2015\Projects\Q7\Q7\bin\Debug\Q7.pdb
+c:\users\suneel kumar\documents\visual studio 2015\Projects\Q7\Q7\obj\Debug\Q7.exe
+c:\users\suneel kumar\documents\visual studio 2015\Projects\Q7\Q7\obj\Debug\Q7.pdb
