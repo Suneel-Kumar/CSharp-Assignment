@@ -1,0 +1,6 @@
+c:\users\suneel kumar\documents\visual studio 2015\Projects\printingABCinaTriangle\printingABCinaTriangle\bin\Debug\printingABCinaTriangle.exe.config
+c:\users\suneel kumar\documents\visual studio 2015\Projects\printingABCinaTriangle\printingABCinaTriangle\bin\Debug\printingABCinaTriangle.exe
+c:\users\suneel kumar\documents\visual studio 2015\Projects\printingABCinaTriangle\printingABCinaTriangle\bin\Debug\printingABCinaTriangle.pdb
+c:\users\suneel kumar\documents\visual studio 2015\Projects\printingABCinaTriangle\printingABCinaTriangle\obj\Debug\printingABCinaTriangle.csprojResolveAssemblyReference.cache
+c:\users\suneel kumar\documents\visual studio 2015\Projects\printingABCinaTriangle\printingABCinaTriangle\obj\Debug\printingABCinaTriangle.exe
+c:\users\suneel kumar\documents\visual studio 2015\Projects\printingABCinaTriangle\printingABCinaTriangle\obj\Debug\printingABCinaTriangle.pdb

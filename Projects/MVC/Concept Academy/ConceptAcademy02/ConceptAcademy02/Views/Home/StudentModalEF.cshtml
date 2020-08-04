@@ -1,0 +1,27 @@
+﻿@model ConceptAcademy02.Models.StModal
+@{
+    ViewBag.Title = "StudentModalEF";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>StudentModalEF</h2>
+
+<div class="container jumbotron">
+    @if (Model != null)
+    {
+        <table class="table tab-content table-bordered table-condensed table-striped table-responsive">
+            <tr>
+                <td>ID : </td>
+                <td>Name : </td>
+                <td>Age : </td>
+            </tr>
+            <tr>
+                <td>@Model.Std_Id</td>
+                <td>@Model.Std_Name</td>
+                <td>@Model.Std_Age</td>
+            </tr>
+           
+        </table>
+    }
+</div>
+

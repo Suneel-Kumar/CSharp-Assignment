@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AliRazaMVCModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Dept">
+    <Key>
+      <PropertyRef Name="Dept_Id" />
+    </Key>
+    <Property Name="Dept_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Dept_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Emp_Dept" Type="Int32" />
+    <NavigationProperty Name="Employee" Relationship="Self.FK__Dept__Emp_Dept__1367E606" FromRole="Dept" ToRole="Employee" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="emp_Id" />
+    </Key>
+    <Property Name="emp_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="emp_Name" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="emp_Age" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Depts" Relationship="Self.FK__Dept__Emp_Dept__1367E606" FromRole="Employee" ToRole="Dept" />
+  </EntityType>
+  <Association Name="FK__Dept__Emp_Dept__1367E606">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Dept" Type="Self.Dept" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="emp_Id" />
+      </Principal>
+      <Dependent Role="Dept">
+        <PropertyRef Name="Emp_Dept" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="AliRazaMVCEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Depts" EntityType="Self.Dept" />
+    <EntitySet Name="Employees" EntityType="Self.Employee" />
+    <AssociationSet Name="FK__Dept__Emp_Dept__1367E606" Association="Self.FK__Dept__Emp_Dept__1367E606">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="Dept" EntitySet="Depts" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

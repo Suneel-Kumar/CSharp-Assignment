@@ -1,0 +1,34 @@
+﻿@model IEnumerable<ConceptAcademy03.Models.StudentModal>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div class="container jumbotron">
+    @if (Model  != null)
+    {
+        <table class="table tab-content table-bordered table-responsive table-striped">
+            <thead>
+                <tr>
+                    <td>ID :</td>
+                    <td>Name :</td>
+                    <td>Age :</td>
+                    <td>Department :</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Std_ID</td>
+                        <td>@item.Std_Name</td>
+                        <td>@item.Std_Age</td>
+                        <td>@item.Dept_Name</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>
+

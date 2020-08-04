@@ -1,0 +1,41 @@
+﻿body {
+    background-color : #f7f7f7;
+}
+#loginFormLayout{
+    background-color: #fff;
+    padding: 40px 40px;
+    margin-top: 40px;
+}
+
+#loginFormLayout #loginForm{
+    padding-top : 70px;
+    padding-left :70px;  
+}
+
+#loginFormLayout #loginForm h3{
+    margin : 0px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#loginFormLayout #loginForm input[type = "text"],
+#loginFormLayout #loginForm .input-group-addon
+{
+    border : none;
+    background: none;
+    outline: none;
+    box-shadow:none;
+    border-bottom: 1px solid #ddd;
+}
+
+#loginFormLayout #loginForm .input-group-addon{
+    padding: 0px;
+    padding-left : 5px;
+}
+
+#loginFormLayout #LoginImage{
+    border-right : 1px solid #ddd;
+}
+

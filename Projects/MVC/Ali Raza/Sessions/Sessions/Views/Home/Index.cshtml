@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@if(Session["Data"] == null)
+{
+    <p>@Html.ActionLink("Login Please", "Index", "Login")</p>
+}
+else
+{
+    <p>Welcome Dear Sir @Session["Data"]  ...!</p>
+    <p>@Html.ActionLink("Logout", "Log", "Login")</p>
+}
+
+

@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Auth Controller</h2>
+
+@if (Request.Cookies["Data"] == null)
+{
+    <p>@Html.ActionLink("Login Please", "Index", "Login")</p>
+}
+else
+{
+    <h2>Welcome , @Request.Cookies["Data"].Value</h2>
+}
+
+

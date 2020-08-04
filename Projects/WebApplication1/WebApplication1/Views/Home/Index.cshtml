@@ -1,0 +1,294 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+
+<style>
+    ul.jss87 .jss88 {
+    width: 45%;
+    height: 10%;
+    margin-top: 2%;
+    margin-left: 3.5%;
+    border-radius: 10px;
+    background-color: rgb(64, 37, 1);
+}
+
+
+    .jss88 {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .jss87 {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        list-style: none;
+    }
+
+    /*ul {
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+    }*/
+
+    .jss99 {
+        transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    }
+
+    .jss98 {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .jss91 {
+        width: 100%;
+        display: flex;
+        position: relative;
+        box-sizing: border-box;
+        text-align: left;
+        align-items: center;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        justify-content: flex-start;
+        text-decoration: none;
+    }
+
+    .jss101 {
+        color: inherit;
+        border: 0;
+        margin: 0;
+        cursor: pointer;
+        display: inline-flex;
+        outline: none;
+        padding: 0;
+        position: relative;
+        align-items: center;
+        user-select: none;
+        border-radius: 0;
+        vertical-align: middle;
+        justify-content: center;
+        -moz-appearance: none;
+        text-decoration: none;
+        background-color: transparent;
+        -webkit-appearance: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .jss104:first-child {
+    padding-left: 0;
+}
+    .jss104 {
+    flex: 1 1 auto;
+    padding: 0 16px;
+    min-width: 0;
+}
+    .jss91 {
+    width: 100%;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    text-align: left;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    justify-content: flex-start;
+    text-decoration: none;
+}
+    .jss87 {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        list-style: none;
+    }
+
+    .jss117 {
+        color: rgba(0, 0, 0, 0.87);
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        line-height: 1.5em;
+    }
+
+    .jss110 {
+        margin: 0;
+        display: block;
+    }
+
+    * {
+        outline-width: 0;
+    }
+
+    .jss101 {
+        color: inherit;
+        border: 0;
+        margin: 0;
+        cursor: pointer;
+        display: inline-flex;
+        outline: none;
+        padding: 0;
+        position: relative;
+        align-items: center;
+        user-select: none;
+        border-radius: 0;
+        vertical-align: middle;
+        justify-content: center;
+        -moz-appearance: none;
+        text-decoration: none;
+        background-color: transparent;
+        -webkit-appearance: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+
+    ul.jss87 .jss88 {
+    width: 45%;
+    height: 10%;
+    margin-top: 2%;
+    margin-left: 3.5%;
+    border-radius: 10px;
+    background-color: rgb(64, 37, 1);
+}
+
+
+
+    /*text-align: center;
+    font-family: Montserrat!important;
+    outline-width: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    list-style: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 45%;
+    height: 10%;
+    margin-top: 2%;
+    margin-left: 3.5%;
+    border-radius: 10px;
+    background-color: rgb(64, 37, 1);*/
+</style>
+
+<div style="display: flex; flex-wrap: wrap;">
+    <ul class="jss87 jss88" style="width: 45%; height: 10%; margin-top: 2%; margin-left: 3.5%; border-radius: 10px; background-color: rgb(64, 37, 1);">
+        <div tabindex="0" class="jss101 jss91 jss94 jss98 jss99" role="button">
+            <div class="jss104" style="text-transform: capitalize;">
+                <span class="jss110 jss117 jss107">
+                    <span style="color: white;">VueJs</span>
+                </span>
+            </div>
+            <svg class="jss135" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z">
+                </path>
+                <path fill="none" d="M0 0h24v24H0z"></path>
+            </svg>
+            <span class="jss142"></span>
+        </div>
+    </ul>
+    <ul class="jss87 jss88" style="width: 45%; height: 10%; margin-top: 2%; margin-left: 3.5%; border-radius: 10px; background-color: rgb(64, 37, 1);">
+        <div tabindex="0" class="jss101 jss91 jss94 jss98 jss99" role="button" onclick="GotoQuiz()">
+            <div class="jss104" style="text-transform: capitalize;">
+                <span class="jss110 jss117 jss107"><span style="color: white;">Javascript</span></span>
+            </div><svg class="jss135" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"></path>
+                <path fill="none" d="M0 0h24v24H0z"></path>
+            </svg><span class="jss142"></span>
+        </div>
+    </ul><ul class="jss87 jss88" style="width: 45%; height: 10%; margin-top: 2%; margin-left: 3.5%; border-radius: 10px; background-color: rgb(64, 37, 1);">
+        <div tabindex="0" class="jss101 jss91 jss94 jss98 jss99" role="button">
+            <div class="jss104" style="text-transform: capitalize;">
+                <span class="jss110 jss117 jss107"><span style="color: white;">CSS</span></span>
+            </div><svg class="jss135" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"></path><path fill="none" d="M0 0h24v24H0z"></path></svg><span class="jss142"></span>
+        </div>
+    </ul>
+    <ul class="jss87 jss88" style="width: 45%; height: 10%; margin-top: 2%; margin-left: 3.5%; border-radius: 10px; background-color: rgb(64, 37, 1);">
+        <div tabindex="0" class="jss101 jss91 jss94 jss98 jss99" role="button">
+            <div class="jss104" style="text-transform: capitalize;">
+                <span class="jss110 jss117 jss107"><span style="color: white;">HTML</span></span>
+            </div>
+            <svg class="jss135" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"></path>
+                <path fill="none" d="M0 0h24v24H0z"></path>
+            </svg><span class="jss142"></span>
+        </div>
+    </ul>
+    <ul class="jss87 jss88" style="width: 45%; height: 10%; margin-top: 2%; margin-left: 3.5%; border-radius: 10px; background-color: rgb(64, 37, 1);">
+        <div tabindex="0" class="jss101 jss91 jss94 jss98 jss99" role="button">
+            <div class="jss104" style="text-transform: capitalize;">
+                <span class="jss110 jss117 jss107"><span style="color: white;">EX-MS2 | Advance</span></span>
+            </div><svg class="jss135" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"></path>
+                <path fill="none" d="M0 0h24v24H0z"></path>
+            </svg><span class="jss142"></span>
+        </div>
+    </ul><ul class="jss87 jss88" style="width: 45%; height: 10%; margin-top: 2%; margin-left: 3.5%; border-radius: 10px; background-color: rgb(64, 37, 1);">
+        <div tabindex="0" class="jss101 jss91 jss94 jss98 jss99" role="button">
+            <div class="jss104" style="text-transform: capitalize;">
+                <span class="jss110 jss117 jss107"><span style="color: white;">EX-MS1 | Beginners</span></span>
+            </div><svg class="jss135" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"></path><path fill="none" d="M0 0h24v24H0z"></path></svg>
+            <span class="jss142"></span>
+        </div>
+    </ul>
+    <ul class="jss87 jss88" style="width: 45%; height: 10%; margin-top: 2%; margin-left: 3.5%; border-radius: 10px; background-color: rgb(64, 37, 1);">
+        <div tabindex="0" class="jss101 jss91 jss94 jss98 jss99" role="button">
+            <div class="jss104" style="text-transform: capitalize;"><span class="jss110 jss117 jss107"><span style="color: white;">Node</span></span></div>
+            <svg class="jss135" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"></path>
+                <path fill="none" d="M0 0h24v24H0z"></path>
+            </svg><span class="jss142"></span>
+        </div>
+    </ul>
+    <ul class="jss87 jss88" style="width: 45%; height: 10%; margin-top: 2%; margin-left: 3.5%; border-radius: 10px; background-color: rgb(64, 37, 1);">
+        <div tabindex="0" class="jss101 jss91 jss94 jss98 jss99" role="button">
+            <div class="jss104" style="text-transform: capitalize;">
+                <span class="jss110 jss117 jss107"><span style="color: white;">Angular</span></span>
+            </div><svg class="jss135" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"></path>
+                <path fill="none" d="M0 0h24v24H0z">
+                </path>
+            </svg>
+            <span class="jss142">
+
+            </span>
+        </div>
+    </ul>
+    <ul class="jss87 jss88" style="width: 45%; height: 10%; margin-top: 2%; margin-left: 3.5%; border-radius: 10px; background-color: rgb(64, 37, 1);">
+        <div tabindex="0" class="jss101 jss91 jss94 jss98 jss99" role="button">
+            <div class="jss104" style="text-transform: capitalize;">
+                <span class="jss110 jss117 jss107">
+                    <span style="color: white;">React</span>
+                </span>
+            </div>
+            <svg class="jss135" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"></path>
+                <path fill="none" d="M0 0h24v24H0z">
+                </path>
+            </svg>
+            <span class="jss142">
+
+            </span>
+        </div>
+    </ul>
+    <ul class="jss87 jss88" style="width: 45%; height: 10%; margin-top: 2%; margin-left: 3.5%; border-radius: 10px; background-color: rgb(64, 37, 1);">
+        <div tabindex="0" class="jss101 jss91 jss94 jss98 jss99" role="button">
+            <div class="jss104" style="text-transform: capitalize;">
+                <span class="jss110 jss117 jss107"><span style="color: white;">React Native</span></span>
+            </div>
+            <svg class="jss135" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"></path>
+                <path fill="none" d="M0 0h24v24H0z">
+                </path>
+            </svg>
+            <span class="jss142"></span>
+        </div>
+    </ul>
+</div>
+
+
+

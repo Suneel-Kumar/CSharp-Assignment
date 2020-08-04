@@ -1,0 +1,30 @@
+﻿@model IEnumerable <ConceptAcademy02.Models.StModal>
+@{
+    ViewBag.Title = "Index12";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index12</h2>
+
+<div class="container jumbotron">
+    @if (Model != null)
+    {
+        <table>
+            <tr>
+                <td>ID:</td>
+                <td>Name : </td>
+                <td>Age : </td>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.ID</td>
+                    <td>@item.Name</td>
+                    <td>@item.Age</td>
+                </tr>
+            }
+            
+        </table>
+    }
+</div>
+

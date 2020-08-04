@@ -1,0 +1,29 @@
+﻿@model IEnumerable<ConceptAcademy04.Models.Employee>
+@{
+    ViewBag.Title = "Employee";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Employee's Detail's</h2>
+<div class="jumbotron container">
+
+    @if (Model != null)
+    {
+        <table class="table tab-content table-bordered table-responsive">
+            <tr>
+                <td>ID : </td>
+                <td>Name : </td>
+                <td>Add : </td>
+                <td>Dept : </td>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>@item.Emp_ID</tr>
+                <tr>@item.Emp_Name</tr>
+                <tr>@item.Emp_Add</tr>
+                <tr>@item.Emp_Dept</tr>
+            }
+        </table>
+    }
+
+</div>

@@ -1,0 +1,13 @@
+﻿@model mvcdemo.Models.user
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<form action="@Url.Action("login","user")" method="post" >
+        <input type="text" placeholder="Enter Username" name="uname" required>
+        <input type="text" placeholder="Enter Password" name="password" required>
+
+        <button type="submit">Login</button>  
+</form>

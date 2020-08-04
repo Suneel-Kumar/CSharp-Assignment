@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_ConceptAcademyModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Student">
+    <Key>
+      <PropertyRef Name="Std_ID" />
+    </Key>
+    <Property Name="Std_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Std_Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Std_Age" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="Department" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_Dept">
+    <Key>
+      <PropertyRef Name="Dept_ID" />
+    </Key>
+    <Property Name="Dept_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Dept_Name" Type="varchar" MaxLength="40" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Student__Departm__1273C1CD">
+    <End Role="tbl_Dept" Type="Self.tbl_Dept" Multiplicity="0..1" />
+    <End Role="Student" Type="Self.Student" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Dept">
+        <PropertyRef Name="Dept_ID" />
+      </Principal>
+      <Dependent Role="Student">
+        <PropertyRef Name="Department" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DB_ConceptAcademyModelStoreContainer">
+    <EntitySet Name="Student" EntityType="Self.Student" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Dept" EntityType="Self.tbl_Dept" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Student__Departm__1273C1CD" Association="Self.FK__Student__Departm__1273C1CD">
+      <End Role="tbl_Dept" EntitySet="tbl_Dept" />
+      <End Role="Student" EntitySet="Student" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

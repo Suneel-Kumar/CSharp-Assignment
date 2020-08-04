@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_ConceptAcademyModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Student">
+    <Key>
+      <PropertyRef Name="Std_ID" />
+    </Key>
+    <Property Name="Std_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Std_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Std_Age" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Department" Type="Int32" />
+    <NavigationProperty Name="tbl_Dept" Relationship="Self.FK__Student__Departm__1273C1CD" FromRole="Student" ToRole="tbl_Dept" />
+  </EntityType>
+  <EntityType Name="tbl_Dept">
+    <Key>
+      <PropertyRef Name="Dept_ID" />
+    </Key>
+    <Property Name="Dept_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Dept_Name" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Students" Relationship="Self.FK__Student__Departm__1273C1CD" FromRole="tbl_Dept" ToRole="Student" />
+  </EntityType>
+  <Association Name="FK__Student__Departm__1273C1CD">
+    <End Role="tbl_Dept" Type="Self.tbl_Dept" Multiplicity="0..1" />
+    <End Role="Student" Type="Self.Student" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Dept">
+        <PropertyRef Name="Dept_ID" />
+      </Principal>
+      <Dependent Role="Student">
+        <PropertyRef Name="Department" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DB_ConceptAcademyEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Students" EntityType="Self.Student" />
+    <EntitySet Name="tbl_Dept" EntityType="Self.tbl_Dept" />
+    <AssociationSet Name="FK__Student__Departm__1273C1CD" Association="Self.FK__Student__Departm__1273C1CD">
+      <End Role="tbl_Dept" EntitySet="tbl_Dept" />
+      <End Role="Student" EntitySet="Students" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

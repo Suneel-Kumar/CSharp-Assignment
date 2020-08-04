@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MVC_Concept_AcademyModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tbl_Dept">
+    <Key>
+      <PropertyRef Name="Dept_Id" />
+    </Key>
+    <Property Name="Dept_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Dept_Name" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="tbl_Emps" Relationship="Self.FK__tbl_Emps__Emp_FK__145C0A3F" FromRole="tbl_Dept" ToRole="tbl_Emps" />
+  </EntityType>
+  <EntityType Name="tbl_Emp">
+    <Key>
+      <PropertyRef Name="Emp_ID" />
+    </Key>
+    <Property Name="Emp_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Emp_Name" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Emp_Age" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Emps">
+    <Key>
+      <PropertyRef Name="Emp_ID" />
+    </Key>
+    <Property Name="Emp_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Emp_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Emp_Age" Type="Int32" Nullable="false" />
+    <Property Name="Emp_FK_Dept_ID" Type="Int32" />
+    <NavigationProperty Name="tbl_Dept" Relationship="Self.FK__tbl_Emps__Emp_FK__145C0A3F" FromRole="tbl_Emps" ToRole="tbl_Dept" />
+  </EntityType>
+  <Association Name="FK__tbl_Emps__Emp_FK__145C0A3F">
+    <End Role="tbl_Dept" Type="Self.tbl_Dept" Multiplicity="0..1" />
+    <End Role="tbl_Emps" Type="Self.tbl_Emps" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Dept">
+        <PropertyRef Name="Dept_Id" />
+      </Principal>
+      <Dependent Role="tbl_Emps">
+        <PropertyRef Name="Emp_FK_Dept_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MVC_Concept_AcademyEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tbl_Dept" EntityType="Self.tbl_Dept" />
+    <EntitySet Name="tbl_Emp" EntityType="Self.tbl_Emp" />
+    <EntitySet Name="tbl_Emps" EntityType="Self.tbl_Emps" />
+    <AssociationSet Name="FK__tbl_Emps__Emp_FK__145C0A3F" Association="Self.FK__tbl_Emps__Emp_FK__145C0A3F">
+      <End Role="tbl_Dept" EntitySet="tbl_Dept" />
+      <End Role="tbl_Emps" EntitySet="tbl_Emps" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

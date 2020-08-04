@@ -1,0 +1,27 @@
+﻿@model IEnumerable<tbl_User>
+@{
+    ViewBag.Title = "ListView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>List Of Users</h2>
+
+
+<div class="container">
+    <table class="table table-bordered table-striped">
+        <tr>
+            <th>Name :</th>
+            <th>Email :</th>
+            <th>Password : </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Email</td>
+                <td>@item.Password</td>
+            </tr>
+        }
+    </table>
+</div>

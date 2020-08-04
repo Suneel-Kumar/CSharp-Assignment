@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Suneel";
+}
+
+<h2>Suneel</h2>
+
+@if (ViewBag.name != null)
+{
+    <table class="table tab-content table-bordered">
+        <tr>
+            <td>Name : </td>
+        </tr>
+        @foreach (var item in @ViewBag.name)
+        {
+            <tr>
+                <td>@item</td>
+            </tr>
+        }
+    </table>
+}
+

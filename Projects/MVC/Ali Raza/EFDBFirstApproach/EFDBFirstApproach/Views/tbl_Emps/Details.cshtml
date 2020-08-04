@@ -1,0 +1,42 @@
+﻿@model EFDBFirstApproach.tbl_Emps
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tbl_Emps</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Emp_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Emp_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Emp_Age)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Emp_Age)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tbl_Dept.Dept_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbl_Dept.Dept_Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Emp_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,6 @@
+c:\users\suneel kumar\documents\visual studio 2015\Projects\PrintSameTriangle\PrintSameTriangle\bin\Debug\PrintSameTriangle.exe.config
+c:\users\suneel kumar\documents\visual studio 2015\Projects\PrintSameTriangle\PrintSameTriangle\bin\Debug\PrintSameTriangle.exe
+c:\users\suneel kumar\documents\visual studio 2015\Projects\PrintSameTriangle\PrintSameTriangle\bin\Debug\PrintSameTriangle.pdb
+c:\users\suneel kumar\documents\visual studio 2015\Projects\PrintSameTriangle\PrintSameTriangle\obj\Debug\PrintSameTriangle.csprojResolveAssemblyReference.cache
+c:\users\suneel kumar\documents\visual studio 2015\Projects\PrintSameTriangle\PrintSameTriangle\obj\Debug\PrintSameTriangle.exe
+c:\users\suneel kumar\documents\visual studio 2015\Projects\PrintSameTriangle\PrintSameTriangle\obj\Debug\PrintSameTriangle.pdb

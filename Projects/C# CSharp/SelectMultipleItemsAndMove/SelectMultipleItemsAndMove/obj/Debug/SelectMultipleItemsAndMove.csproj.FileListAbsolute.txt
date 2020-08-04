@@ -1,0 +1,9 @@
+C:\Users\Suneel Kumar\Documents\Visual Studio 2015\Projects\C# CSharp\SelectMultipleItemsAndMove\SelectMultipleItemsAndMove\bin\Debug\SelectMultipleItemsAndMove.exe.config
+C:\Users\Suneel Kumar\Documents\Visual Studio 2015\Projects\C# CSharp\SelectMultipleItemsAndMove\SelectMultipleItemsAndMove\bin\Debug\SelectMultipleItemsAndMove.exe
+C:\Users\Suneel Kumar\Documents\Visual Studio 2015\Projects\C# CSharp\SelectMultipleItemsAndMove\SelectMultipleItemsAndMove\bin\Debug\SelectMultipleItemsAndMove.pdb
+C:\Users\Suneel Kumar\Documents\Visual Studio 2015\Projects\C# CSharp\SelectMultipleItemsAndMove\SelectMultipleItemsAndMove\obj\Debug\SelectMultipleItemsAndMove.csprojResolveAssemblyReference.cache
+C:\Users\Suneel Kumar\Documents\Visual Studio 2015\Projects\C# CSharp\SelectMultipleItemsAndMove\SelectMultipleItemsAndMove\obj\Debug\SelectMultipleItemsAndMove.Form1.resources
+C:\Users\Suneel Kumar\Documents\Visual Studio 2015\Projects\C# CSharp\SelectMultipleItemsAndMove\SelectMultipleItemsAndMove\obj\Debug\SelectMultipleItemsAndMove.Properties.Resources.resources
+C:\Users\Suneel Kumar\Documents\Visual Studio 2015\Projects\C# CSharp\SelectMultipleItemsAndMove\SelectMultipleItemsAndMove\obj\Debug\SelectMultipleItemsAndMove.csproj.GenerateResource.Cache
+C:\Users\Suneel Kumar\Documents\Visual Studio 2015\Projects\C# CSharp\SelectMultipleItemsAndMove\SelectMultipleItemsAndMove\obj\Debug\SelectMultipleItemsAndMove.exe
+C:\Users\Suneel Kumar\Documents\Visual Studio 2015\Projects\C# CSharp\SelectMultipleItemsAndMove\SelectMultipleItemsAndMove\obj\Debug\SelectMultipleItemsAndMove.pdb

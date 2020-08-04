@@ -1,0 +1,6 @@
+c:\users\suneel kumar\documents\visual studio 2015\Projects\Chapter6\Chapter6\bin\Debug\Chapter6.exe.config
+c:\users\suneel kumar\documents\visual studio 2015\Projects\Chapter6\Chapter6\bin\Debug\Chapter6.exe
+c:\users\suneel kumar\documents\visual studio 2015\Projects\Chapter6\Chapter6\bin\Debug\Chapter6.pdb
+c:\users\suneel kumar\documents\visual studio 2015\Projects\Chapter6\Chapter6\obj\Debug\Chapter6.csprojResolveAssemblyReference.cache
+c:\users\suneel kumar\documents\visual studio 2015\Projects\Chapter6\Chapter6\obj\Debug\Chapter6.exe
+c:\users\suneel kumar\documents\visual studio 2015\Projects\Chapter6\Chapter6\obj\Debug\Chapter6.pdb

@@ -1,0 +1,11 @@
+﻿@model ConceptAcademy04.Models.Employee
+@{
+    ViewBag.Title = "DropDown";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>DropDown</h2>
+
+<div class="container jumbotron">
+    @Html.DropDownListFor(x => x.dept_Name, ViewBag.dept_List as SelectList, "---Select Item -----")
+</div>

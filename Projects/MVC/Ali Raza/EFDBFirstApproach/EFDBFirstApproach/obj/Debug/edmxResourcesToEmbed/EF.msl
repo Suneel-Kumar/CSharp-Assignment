@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MVC_Concept_AcademyModelStoreContainer" CdmEntityContainer="MVC_Concept_AcademyEntities">
+    <EntitySetMapping Name="tbl_Dept">
+      <EntityTypeMapping TypeName="MVC_Concept_AcademyModel.tbl_Dept">
+        <MappingFragment StoreEntitySet="tbl_Dept">
+          <ScalarProperty Name="Dept_Id" ColumnName="Dept_Id" />
+          <ScalarProperty Name="Dept_Name" ColumnName="Dept_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Emp">
+      <EntityTypeMapping TypeName="MVC_Concept_AcademyModel.tbl_Emp">
+        <MappingFragment StoreEntitySet="tbl_Emp">
+          <ScalarProperty Name="Emp_ID" ColumnName="Emp_ID" />
+          <ScalarProperty Name="Emp_Name" ColumnName="Emp_Name" />
+          <ScalarProperty Name="Emp_Age" ColumnName="Emp_Age" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Emps">
+      <EntityTypeMapping TypeName="MVC_Concept_AcademyModel.tbl_Emps">
+        <MappingFragment StoreEntitySet="tbl_Emps">
+          <ScalarProperty Name="Emp_ID" ColumnName="Emp_ID" />
+          <ScalarProperty Name="Emp_Name" ColumnName="Emp_Name" />
+          <ScalarProperty Name="Emp_Age" ColumnName="Emp_Age" />
+          <ScalarProperty Name="Emp_FK_Dept_ID" ColumnName="Emp_FK_Dept_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

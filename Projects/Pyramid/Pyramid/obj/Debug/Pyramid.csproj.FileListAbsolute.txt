@@ -1,0 +1,6 @@
+c:\users\suneel kumar\documents\visual studio 2015\Projects\Pyramid\Pyramid\bin\Debug\Pyramid.exe.config
+c:\users\suneel kumar\documents\visual studio 2015\Projects\Pyramid\Pyramid\bin\Debug\Pyramid.exe
+c:\users\suneel kumar\documents\visual studio 2015\Projects\Pyramid\Pyramid\bin\Debug\Pyramid.pdb
+c:\users\suneel kumar\documents\visual studio 2015\Projects\Pyramid\Pyramid\obj\Debug\Pyramid.csprojResolveAssemblyReference.cache
+c:\users\suneel kumar\documents\visual studio 2015\Projects\Pyramid\Pyramid\obj\Debug\Pyramid.exe
+c:\users\suneel kumar\documents\visual studio 2015\Projects\Pyramid\Pyramid\obj\Debug\Pyramid.pdb

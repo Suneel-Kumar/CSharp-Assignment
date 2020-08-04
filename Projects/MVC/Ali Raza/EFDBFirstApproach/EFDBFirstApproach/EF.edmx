@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="MVC_Concept_AcademyModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tbl_Dept">
+          <Key>
+            <PropertyRef Name="Dept_Id" />
+          </Key>
+          <Property Name="Dept_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Dept_Name" Type="nvarchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tbl_Emp">
+          <Key>
+            <PropertyRef Name="Emp_ID" />
+          </Key>
+          <Property Name="Emp_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Emp_Name" Type="nvarchar" MaxLength="40" Nullable="false" />
+          <Property Name="Emp_Age" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tbl_Emps">
+          <Key>
+            <PropertyRef Name="Emp_ID" />
+          </Key>
+          <Property Name="Emp_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Emp_Name" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="Emp_Age" Type="int" Nullable="false" />
+          <Property Name="Emp_FK_Dept_ID" Type="int" />
+        </EntityType>
+        <Association Name="FK__tbl_Emps__Emp_FK__145C0A3F">
+          <End Role="tbl_Dept" Type="Self.tbl_Dept" Multiplicity="0..1" />
+          <End Role="tbl_Emps" Type="Self.tbl_Emps" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_Dept">
+              <PropertyRef Name="Dept_Id" />
+            </Principal>
+            <Dependent Role="tbl_Emps">
+              <PropertyRef Name="Emp_FK_Dept_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="MVC_Concept_AcademyModelStoreContainer">
+          <EntitySet Name="tbl_Dept" EntityType="Self.tbl_Dept" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_Emp" EntityType="Self.tbl_Emp" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_Emps" EntityType="Self.tbl_Emps" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__tbl_Emps__Emp_FK__145C0A3F" Association="Self.FK__tbl_Emps__Emp_FK__145C0A3F">
+            <End Role="tbl_Dept" EntitySet="tbl_Dept" />
+            <End Role="tbl_Emps" EntitySet="tbl_Emps" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MVC_Concept_AcademyModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tbl_Dept">
+          <Key>
+            <PropertyRef Name="Dept_Id" />
+          </Key>
+          <Property Name="Dept_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Dept_Name" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="tbl_Emps" Relationship="Self.FK__tbl_Emps__Emp_FK__145C0A3F" FromRole="tbl_Dept" ToRole="tbl_Emps" />
+        </EntityType>
+        <EntityType Name="tbl_Emp">
+          <Key>
+            <PropertyRef Name="Emp_ID" />
+          </Key>
+          <Property Name="Emp_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Emp_Name" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Emp_Age" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tbl_Emps">
+          <Key>
+            <PropertyRef Name="Emp_ID" />
+          </Key>
+          <Property Name="Emp_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Emp_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Emp_Age" Type="Int32" Nullable="false" />
+          <Property Name="Emp_FK_Dept_ID" Type="Int32" />
+          <NavigationProperty Name="tbl_Dept" Relationship="Self.FK__tbl_Emps__Emp_FK__145C0A3F" FromRole="tbl_Emps" ToRole="tbl_Dept" />
+        </EntityType>
+        <Association Name="FK__tbl_Emps__Emp_FK__145C0A3F">
+          <End Role="tbl_Dept" Type="Self.tbl_Dept" Multiplicity="0..1" />
+          <End Role="tbl_Emps" Type="Self.tbl_Emps" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_Dept">
+              <PropertyRef Name="Dept_Id" />
+            </Principal>
+            <Dependent Role="tbl_Emps">
+              <PropertyRef Name="Emp_FK_Dept_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="MVC_Concept_AcademyEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tbl_Dept" EntityType="Self.tbl_Dept" />
+          <EntitySet Name="tbl_Emp" EntityType="Self.tbl_Emp" />
+          <EntitySet Name="tbl_Emps" EntityType="Self.tbl_Emps" />
+          <AssociationSet Name="FK__tbl_Emps__Emp_FK__145C0A3F" Association="Self.FK__tbl_Emps__Emp_FK__145C0A3F">
+            <End Role="tbl_Dept" EntitySet="tbl_Dept" />
+            <End Role="tbl_Emps" EntitySet="tbl_Emps" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MVC_Concept_AcademyModelStoreContainer" CdmEntityContainer="MVC_Concept_AcademyEntities">
+          <EntitySetMapping Name="tbl_Dept">
+            <EntityTypeMapping TypeName="MVC_Concept_AcademyModel.tbl_Dept">
+              <MappingFragment StoreEntitySet="tbl_Dept">
+                <ScalarProperty Name="Dept_Id" ColumnName="Dept_Id" />
+                <ScalarProperty Name="Dept_Name" ColumnName="Dept_Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_Emp">
+            <EntityTypeMapping TypeName="MVC_Concept_AcademyModel.tbl_Emp">
+              <MappingFragment StoreEntitySet="tbl_Emp">
+                <ScalarProperty Name="Emp_ID" ColumnName="Emp_ID" />
+                <ScalarProperty Name="Emp_Name" ColumnName="Emp_Name" />
+                <ScalarProperty Name="Emp_Age" ColumnName="Emp_Age" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_Emps">
+            <EntityTypeMapping TypeName="MVC_Concept_AcademyModel.tbl_Emps">
+              <MappingFragment StoreEntitySet="tbl_Emps">
+                <ScalarProperty Name="Emp_ID" ColumnName="Emp_ID" />
+                <ScalarProperty Name="Emp_Name" ColumnName="Emp_Name" />
+                <ScalarProperty Name="Emp_Age" ColumnName="Emp_Age" />
+                <ScalarProperty Name="Emp_FK_Dept_ID" ColumnName="Emp_FK_Dept_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

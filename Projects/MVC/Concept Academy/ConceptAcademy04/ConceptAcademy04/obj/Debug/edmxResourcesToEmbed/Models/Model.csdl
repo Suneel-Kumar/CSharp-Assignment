@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_ConceptAcademyModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tbl_Dept">
+    <Key>
+      <PropertyRef Name="dept_ID" />
+    </Key>
+    <Property Name="dept_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="dept_Name" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="tbl_Employee" Relationship="Self.FK__tbl_Emplo__Emp_D__1273C1CD" FromRole="tbl_Dept" ToRole="tbl_Employee" />
+  </EntityType>
+  <EntityType Name="tbl_Employee">
+    <Key>
+      <PropertyRef Name="Emp_ID" />
+    </Key>
+    <Property Name="Emp_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Emp_Name" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Emp_Add" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Emp_Dept" Type="Int32" />
+    <NavigationProperty Name="tbl_Dept" Relationship="Self.FK__tbl_Emplo__Emp_D__1273C1CD" FromRole="tbl_Employee" ToRole="tbl_Dept" />
+  </EntityType>
+  <Association Name="FK__tbl_Emplo__Emp_D__1273C1CD">
+    <End Role="tbl_Dept" Type="Self.tbl_Dept" Multiplicity="0..1" />
+    <End Role="tbl_Employee" Type="Self.tbl_Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Dept">
+        <PropertyRef Name="dept_ID" />
+      </Principal>
+      <Dependent Role="tbl_Employee">
+        <PropertyRef Name="Emp_Dept" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DB_ConceptAcademyEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tbl_Dept" EntityType="Self.tbl_Dept" />
+    <EntitySet Name="tbl_Employee" EntityType="Self.tbl_Employee" />
+    <AssociationSet Name="FK__tbl_Emplo__Emp_D__1273C1CD" Association="Self.FK__tbl_Emplo__Emp_D__1273C1CD">
+      <End Role="tbl_Dept" EntitySet="tbl_Dept" />
+      <End Role="tbl_Employee" EntitySet="tbl_Employee" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

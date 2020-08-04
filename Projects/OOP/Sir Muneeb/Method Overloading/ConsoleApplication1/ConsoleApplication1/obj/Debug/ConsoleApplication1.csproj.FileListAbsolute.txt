@@ -1,0 +1,6 @@
+C:\Users\Muneeb Shafi\Desktop\OOP\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Muneeb Shafi\Desktop\OOP\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Muneeb Shafi\Desktop\OOP\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Muneeb Shafi\Desktop\OOP\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Muneeb Shafi\Desktop\OOP\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\Muneeb Shafi\Desktop\OOP\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

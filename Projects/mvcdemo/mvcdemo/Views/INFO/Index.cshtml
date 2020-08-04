@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        @{
+            @TempData["info"]
+            if (TempData["data"] != null)
+            {
+                <p>@TempData["data"]</p>
+            }
+        }
+        <a href="@Url.Action("Create", "Info")">Create</a>
+    </div>
+</body>
+</html>

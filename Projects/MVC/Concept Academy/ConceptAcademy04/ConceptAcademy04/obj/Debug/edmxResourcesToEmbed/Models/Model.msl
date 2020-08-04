@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DB_ConceptAcademyModelStoreContainer" CdmEntityContainer="DB_ConceptAcademyEntities">
+    <EntitySetMapping Name="tbl_Dept">
+      <EntityTypeMapping TypeName="DB_ConceptAcademyModel.tbl_Dept">
+        <MappingFragment StoreEntitySet="tbl_Dept">
+          <ScalarProperty Name="dept_ID" ColumnName="dept_ID" />
+          <ScalarProperty Name="dept_Name" ColumnName="dept_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Employee">
+      <EntityTypeMapping TypeName="DB_ConceptAcademyModel.tbl_Employee">
+        <MappingFragment StoreEntitySet="tbl_Employee">
+          <ScalarProperty Name="Emp_ID" ColumnName="Emp_ID" />
+          <ScalarProperty Name="Emp_Name" ColumnName="Emp_Name" />
+          <ScalarProperty Name="Emp_Add" ColumnName="Emp_Add" />
+          <ScalarProperty Name="Emp_Dept" ColumnName="Emp_Dept" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

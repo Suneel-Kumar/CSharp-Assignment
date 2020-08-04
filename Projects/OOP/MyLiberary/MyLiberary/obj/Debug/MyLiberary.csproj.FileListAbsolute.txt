@@ -1,0 +1,4 @@
+C:\Users\Suneel Kumar\Documents\Visual Studio 2015\Projects\OOP\MyLiberary\MyLiberary\obj\Debug\MyLiberary.csprojResolveAssemblyReference.cache
+C:\Users\Suneel Kumar\Documents\Visual Studio 2015\Projects\OOP\MyLiberary\MyLiberary\bin\Debug\MyLiberary.pdb
+C:\Users\Suneel Kumar\Documents\Visual Studio 2015\Projects\OOP\MyLiberary\MyLiberary\obj\Debug\MyLiberary.dll
+C:\Users\Suneel Kumar\Documents\Visual Studio 2015\Projects\OOP\MyLiberary\MyLiberary\obj\Debug\MyLiberary.pdb

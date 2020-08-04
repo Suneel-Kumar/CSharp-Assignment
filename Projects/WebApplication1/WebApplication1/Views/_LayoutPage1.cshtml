@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .jss16 {
+            color: #fff;
+            background-color: #402501;
+        }
+        .jss14 {
+            position: static;
+        }
+        .jss10 {
+            width: 100%;
+            display: flex;
+            z-index: 1100;
+            box-sizing: border-box;
+            flex-shrink: 0;
+            flex-direction: column;
+        }
+        .jss24 {
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+    </style>
+</head>
+<body>
+    <header class="jss18 jss24 jss10 jss14 jss16">
+        <div style="display: flex; justify-content: space-between;">
+            <div>
+            </div>
+            <div>
+                <p style="color: white; font-weight: bold; font-size: 20px;">Quiz Categories</p>
+            </div>
+            <div>
+                <div style="width: 40px; height: 40px; padding: 2px; background-color: orange; text-align: center; border-radius: 1000px; font-weight: bolder; box-shadow: black 0px 0px 5px; text-shadow: black 0px 1px 2px; font-size: 30px; margin: 10px 50px 0px 0px; cursor: pointer;">S</div>
+            </div>
+        </div>
+    </header>
+    @RenderBody()
+</body>
+</html>
